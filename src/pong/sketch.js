@@ -62,16 +62,16 @@ export default function sketch(p) {
     }
   };
   p.keyPressed = () => {
-    if (p.keyCode == p.UP_ARROW) {
+    if (p.keyCode === p.UP_ARROW) {
       playerPaddle.isUp = true;
-    } else if (p.keyCode == p.DOWN_ARROW) {
+    } else if (p.keyCode === p.DOWN_ARROW) {
       playerPaddle.isDown = true;
     }
   };
   p.keyReleased = () => {
-    if (p.keyCode == p.UP_ARROW) {
+    if (p.keyCode === p.UP_ARROW) {
       playerPaddle.isUp = false;
-    } else if (p.keyCode == p.DOWN_ARROW) {
+    } else if (p.keyCode === p.DOWN_ARROW) {
       playerPaddle.isDown = false;
     }
   };
