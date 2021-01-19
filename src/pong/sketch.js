@@ -5,7 +5,7 @@ import Paddle from './Paddle';
 import Score from './Score';
 
 export default function sketch(p) {
-  let canvas;
+  //   let canvas;
   let playerPaddle;
   let aiPaddle;
   let ball;
@@ -14,7 +14,7 @@ export default function sketch(p) {
   let width = 624;
   let height = 351;
   p.setup = () => {
-    canvas = p.createCanvas(624, 351);
+    p.createCanvas(624, 351);
     playerPaddle = new Paddle(26, p);
     aiPaddle = new Paddle(width - 48, p);
     ball = new Ball(p);

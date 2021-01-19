@@ -1,4 +1,4 @@
-let width = 624;
+// let width = 624;
 let height = 351;
 export default class Paddle {
   constructor(x, p) {
