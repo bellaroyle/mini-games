@@ -5,13 +5,10 @@
 body {
   text-align: center;
   font-family: 'Helvetica';
-  animation: backgroundColor 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
 
 h1 {
   font-weight: 500;
-  font-size: 50px;
+  font-size: 45px;
   font-family: 'Helvetica';
 }
