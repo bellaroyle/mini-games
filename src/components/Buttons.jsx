@@ -13,7 +13,10 @@ export default function Buttons() {
         <Link to={'/'}>Home</Link>
       </Button>
       <Button>
-        <Link to={'/pong'}>play pong</Link>
+        <Link to={'/pong'}>Pong</Link>
+      </Button>
+      <Button>
+        <Link to={'/noughts-and-crosses'}>Noughts & Crosses</Link>
       </Button>
     </div>
   );
