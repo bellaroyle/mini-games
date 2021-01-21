@@ -10,6 +10,9 @@ export default function Buttons() {
   return (
     <div>
       <Button>
+        <Link to={'/'}>Home</Link>
+      </Button>
+      <Button>
         <Link to={'/pong'}>play pong</Link>
       </Button>
     </div>
