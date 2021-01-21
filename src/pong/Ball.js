@@ -41,7 +41,7 @@ export default class Ball {
   }
 
   display() {
-    this.p.fill('#86ffff');
+    this.p.fill('#66ff33');
     this.p.ellipse(this.x, this.y, this.r * 2, this.r * 2);
   }
 

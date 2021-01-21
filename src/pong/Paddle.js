@@ -21,7 +21,7 @@ export default class Paddle {
   }
 
   display() {
-    this.p.fill('#86ffff');
+    this.p.fill('#66ff33');
     this.p.rect(this.x, this.y, 20, 80);
   }
 

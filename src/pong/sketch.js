@@ -44,7 +44,7 @@ export default function sketch(p) {
     ball.hasHitPlayer(playerPaddle);
     ball.hasHitAi(aiPaddle);
 
-    p.stroke('#86ffff'); // gives a white stroke
+    p.stroke('#66ff33'); // gives a white stroke
     p.line(width / 2, 0, width / 2, height); // draws a line between two points line(x,y,x1,y1)
 
     playerScore.display();
