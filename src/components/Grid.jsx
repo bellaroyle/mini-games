@@ -1,9 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 
-const Button = styled.button`
-  background-color: pink;
-`;
+import { Button } from './miniComponents';
 
 class Grid extends React.Component {
   state = {

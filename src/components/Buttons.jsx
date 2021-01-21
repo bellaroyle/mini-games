@@ -1,22 +1,28 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from '@reach/router';
 
-const Button = styled.button`
-  background-color: pink;
-`;
+import { Button } from './miniComponents';
 
 export default function Buttons() {
   return (
     <div>
       <Button>
-        <Link to={'/'}>Home</Link>
+        <Link to={'/'} style={{ textDecoration: 'none', color: '#000000' }}>
+          Home
+        </Link>
       </Button>
       <Button>
-        <Link to={'/pong'}>Pong</Link>
+        <Link to={'/pong'} style={{ textDecoration: 'none', color: '#000000' }}>
+          Pong
+        </Link>
       </Button>
       <Button>
-        <Link to={'/noughts-and-crosses'}>Noughts & Crosses</Link>
+        <Link
+          to={'/noughts-and-crosses'}
+          style={{ textDecoration: 'none', color: '#000000' }}
+        >
+          Noughts & Crosses
+        </Link>
       </Button>
     </div>
   );

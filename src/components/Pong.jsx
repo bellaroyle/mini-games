@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
 import P5Wrapper from 'react-p5-wrapper';
-import styled from 'styled-components';
 
 import sketch from '../pong/sketch';
-
-const Button = styled.button`
-  background-color: pink;
-`;
+import { Button } from './miniComponents';
 
 export default function Pong() {
   const [play, setPlay] = useState(false);
