@@ -1,4 +1,5 @@
 import './App.css';
+import './grid.css';
 import React from 'react';
 import { Router } from '@reach/router';
 

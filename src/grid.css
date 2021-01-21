@@ -1,0 +1,32 @@
+#grid-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 100px;
+  font-family: 'Comic Sans MS';
+}
+
+#grid {
+  width: 312px;
+  height: 312px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+#grid .square {
+  border: 2px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+#grid .square p {
+  font-size: 70px;
+  margin: 0 auto;
+}
+.empty:hover {
+  background-color: rgb(194, 153, 233);
+}

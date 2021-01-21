@@ -70,13 +70,6 @@ class Grid extends React.Component {
     return (
       <div>
         <div id="grid-container">
-          {this.state.winner ? (
-            <p id="left" class="emoji">
-              🎉
-            </p>
-          ) : (
-            <p></p>
-          )}
           <div id="grid">
             {this.state.grid.map((item, index) => {
               return (
@@ -90,7 +83,6 @@ class Grid extends React.Component {
               );
             })}
           </div>
-          {this.state.winner ? <p class="emoji">🎉</p> : <p></p>}
         </div>
         <div id="winnerPopup">
           {this.state.winner ? (
