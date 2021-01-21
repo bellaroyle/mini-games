@@ -1,7 +1,7 @@
 #grid-container {
   display: flex;
   justify-content: center;
-  padding: 50px 100px;
+  /* padding: 50px 100px; */
   font-family: 'Comic Sans MS';
 }
 
@@ -29,4 +29,7 @@
 }
 .empty:hover {
   background-color: rgb(194, 153, 233);
+}
+.winner {
+  font-size: 30px;
 }

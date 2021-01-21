@@ -1,4 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Button = styled.button`
+  background-color: pink;
+`;
 
 class Grid extends React.Component {
   state = {
@@ -66,6 +71,35 @@ class Grid extends React.Component {
     return isWinner.length !== 0;
   }
 
+  resetGame() {
+    this.setState({
+      grid: ['', '', '', '', '', '', '', '', ''],
+      turn: true,
+      class: [
+        'empty',
+        'empty',
+        'empty',
+        'empty',
+        'empty',
+        'empty',
+        'empty',
+        'empty',
+        'empty',
+      ],
+      winningCombos: [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+      ],
+      winner: false,
+    });
+  }
+
   render() {
     return (
       <div>
@@ -86,9 +120,12 @@ class Grid extends React.Component {
         </div>
         <div id="winnerPopup">
           {this.state.winner ? (
-            <p class="winner">
-              {this.state.turn ? 'Noughts' : 'Crosses'} has won!
-            </p>
+            <>
+              <p class="winner">
+                {this.state.turn ? 'Noughts' : 'Crosses'} has won!
+              </p>
+              <Button onClick={() => this.resetGame()}>play again</Button>
+            </>
           ) : (
             <p></p>
           )}
@@ -98,13 +135,3 @@ class Grid extends React.Component {
   }
 }
 export default Grid;
-
-// componentDidMount() {
-//     const grid = [];
-//     for (let i = 0; i < numOfRows*numOfRows; i++) {
-//         grid.push("")
-//     }
-//     this.setState({grid: grid})
-// }
-
-// makeGrid(numOfRows) {
